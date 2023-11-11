@@ -139,6 +139,20 @@
             settings:controller="com.android.settings.display.ScreenResolutionController" 
             settings:keywords="@string/keywords_screen_resolution"/>
 
+        <com.android.settings.preferences.ui.AdaptiveListPreference
+            android:key="min_refresh_rate"
+            settings:position="middle"
+            android:title="@string/min_refresh_rate_title"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.display.MinRefreshRatePreferenceController" />
+
+        <com.android.settings.preferences.ui.AdaptiveListPreference
+            android:key="max_refresh_rate"
+            settings:position="middle"
+            android:title="@string/max_refresh_rate_title"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.display.PeakRefreshRateListPreferenceController" />
+
         <com.android.settings.preferences.ui.AdaptiveSwitchPreference
             android:title="@string/peak_refresh_rate_title" 
             android:key="peak_refresh_rate"
